@@ -5,7 +5,7 @@ function callAPI() {
 
 
 function getRandomInt(max) {
-  return Math.floor(Math.random(87) * Math.floor(max));
+  return Math.floor((Math.random() * max) + 1);
 }
 let randomNum = getRandomInt(87);
 
@@ -13,17 +13,27 @@ let randomNum = getRandomInt(87);
   $.ajax({url: "https://swapi.co/api/people/" + randomNum,  
     success: function(result){
       
-      $("#person").append("Name: " + result.name);
-      $("#gender").append("Gender: " + result.gender);
+      $("#person").html("Name: " + result.name);
+      $("#gender").html("Gender: " + result.gender);
         
-        var planetURL = result.homeworld;
+        let planetURL = result.homeworld;
         $.ajax({url: planetURL, success: function(planetresult){
-          $("#homePlanet").append("Homeplanet: " + planetresult.name);
+          $("#homePlanet").html("Homeplanet: " + planetresult.name);
         }});
+        if (result.films.length > 0) {
+          for (var i = 0; i < result.films.length; i++) {
+            
+              var movieURL = result.films[i];
+
+              $.ajax({url: movieURL, success : function(newResult){
+                $("#movieList").append("<li> Appears in: " + newResult.title + "</li>");
+              }})
+          }
+        }
         
     },
     error: function(xhr, status, error){
-      var errorMessage = xhr.status + ': ' + xhr.statusText
+      let errorMessage = xhr.status + ': ' + xhr.statusText
       alert('Error - ' + xhr.status);
     }
 });

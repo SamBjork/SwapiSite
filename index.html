@@ -6,17 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Star Wars Site</title>
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="top-bar">
-        <div class="logo">Star Wars Site</div>
+        <div class="logo">Star Wars S&#0105;te</div>
         <div class="menu">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Movies</a></li>
-                <li><a href="#">FaQ</a></li>
             </ul>
         </div>
     </div>
@@ -24,8 +22,7 @@
     <div class="banner">
         <div class="banner-text">
             <div class="banner-text-items">
-                <h3>Press the button for a random Star Wars Character</h3>
-                
+                <h2 id="instruct-text">Press the button for a random <br> Star Wars Character</h3>
                 <input type="button" id="search-btn" value="random">
             </div>
         </div>
@@ -34,38 +31,21 @@
         <h2 id="person"></h2> 
         <h2 id="gender"></h2> 
         <h2 id="homePlanet"></h2>
-    </div>
-    <div class="feedback">
-        <div class="feedback-text">
-            <div class="feedback-items">
-                <h2>What is your favorite thing about Star Wars?</h2>
-                <form action="#" method="POST">
-                    <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-                    <input type="submit" value="Send">
-                </form>
-            </div>
-        </div>
+        <h2 id="movieApperances">
+            <ol id="movieList">
+            </ol>
+        </h2>
+        
     </div>
     <div class="footer">
         <div class="copyright">
             <ul>
-                <li>The Non-Official Star Wars Company </li>
+                <li>The Non-Official Star Wars Site</li>
                 <li>&copy; 2020</li>
             </ul>
         </div>
-        <div class="social">
-            <div class="social-items">
-                <span>We Do Not Exist On These Social Media Platforms</span>
-                <span class="social-divider">|</span>
-                <ul>
-                    <li><a href="#" class="fa fa-facebook"></a></li>
-                    <li><a href="#" class="fa fa-twitter"></a></li>
-                    <li><a href="#" class="fa fa-instagram"></a></li>
-                </ul>
-            </div>
-        </div>
     </div>
-    <script src="js/script.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
