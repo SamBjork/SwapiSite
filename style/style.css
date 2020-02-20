@@ -19,7 +19,6 @@
 ***********/
 
 .top-bar {
-    background-color: rgb(39, 39, 39);
     display: flex;
     width: 100%;
     height: auto;
@@ -69,7 +68,7 @@
 }
 
 .menu ul li a:hover {
-    color: #ffef6071;
+    color: #ffffff71;
 }
 
 /**********
@@ -80,7 +79,8 @@
     background: url("../img/troopers1.jpg");
     width: 100%;
     background-size: cover;
-    z-index: 1;
+    background-color: black;
+
 }
 
 .banner-text {
@@ -111,14 +111,15 @@
 }
 
 .banner-text-items input[type="button"] {
-    background-color: #ecd1b7d3;
+    background-color: #49494980;
     color: #ffe81f;
     font-size: 25px;
+    font-family: StarWarsFont2, serif;
     padding: 10px;
     margin-top: 20px;
     text-transform: uppercase;
     border-radius: 30px;
-    border: 10px solid rgba(250, 238, 231, 0.918);
+    border: 10px solid rgba(248, 218, 127, 0.911);
     transition: all 0.3s ease;
 }
 /**********
