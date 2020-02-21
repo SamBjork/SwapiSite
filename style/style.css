@@ -9,6 +9,15 @@
     src: url(/fonts/SFDistantGalaxy.ttf);
   }
 
+  html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -80,7 +89,6 @@
     width: 100%;
     background-size: cover;
     background-color: black;
-
 }
 
 .banner-text {
@@ -98,16 +106,10 @@
     font-family: StarWarsFont, serif ;
 }
 
-.banner-text-items {
-    
-    
-}
-
-
 #search-btn {
    position: absolute;
    top: 3%;
-   left: 65%;
+   left: 55%;
 }
 
 .banner-text-items input[type="button"] {
@@ -120,8 +122,8 @@
     text-transform: uppercase;
     border-radius: 30px;
     border: 10px solid rgba(248, 218, 127, 0.911);
-    transition: all 0.3s ease;
 }
+
 /**********
     Main Info
 **********/
@@ -130,24 +132,6 @@
     text-align: center;
 }
 
-/**********
-    Footer
-**********/
-
-.feedback {
-    background: url("../img/starwars2.jpg");
-    background-size: cover;
-    position: relative;
-    padding: 80px 0;
-    z-index: 1;
-}
-
-
-
-.feedback-items form input[type="submit"]:hover {
-    background-color: rgba(218, 75, 42, 0.8);
-    color: rgba(255, 255, 255, 0.8);
-}
 
 /**********
     Footer
@@ -175,10 +159,7 @@
 **********/
 
 @media all and (max-width: 1200px) {
-    #instruction-text {
-        flex-flow: column;
-        width: 100%;       
-    }
+
 }
 
 @media all and (max-width: 800px) {
@@ -197,10 +178,7 @@
 
     .banner-text-items {
         width: 100%;
-    }
-
-    .main-content {
-        flex-direction: column;
+        flex: auto;
     }
 }
 
@@ -212,7 +190,7 @@
 
     .logo {
         padding-top: 10px;
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .menu ul {
@@ -220,8 +198,32 @@
         margin-bottom: 20px;
     }
 
-    .banner-text-items h2 {
-        font-size: 2em;
+    #instruction-text {
+        color: #ffea2b;
+        width: 100%; 
+        margin-top: -30%;
+        position: relative;
+        right: 45px;
+        font-size: 1.8em;
+        font-family: StarWarsFont2, serif ;
     }
+
+    .banner-text-items input[type="button"] {
+        background-color: #49494980;
+        color: #ffe81f;
+        font-size: 20px;
+        font-family: StarWarsFont2, serif;
+        padding: 10px;
+        margin-top: 0px;
+        text-transform: uppercase;
+        border-radius: 30px;
+        border: 7px solid rgba(248, 218, 127, 0.911);
+    }
+
+    #search-btn {
+        position: absolute;
+        top: 75%;
+        left: 30%;
+     }
 }
 

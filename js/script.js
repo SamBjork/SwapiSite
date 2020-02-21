@@ -1,19 +1,19 @@
 document.getElementById("search-btn").addEventListener("click", callAPI);
 
- 
-function callAPI() {
-
 
 function getRandomInt(max) {
   return Math.floor((Math.random() * max) + 1);
 }
-let randomNum = getRandomInt(87);
+      
+ 
+function callAPI() {
 
+  let randomNum = getRandomInt(87);
 
   $.ajax({url: "https://swapi.co/api/people/" + randomNum,  
     success: function(result){
       
-      $("#person").html("Name: " + result.name);
+      $("#person").html(result.name);
       $("#gender").html("Gender: " + result.gender);
         
         let planetURL = result.homeworld;
@@ -26,11 +26,14 @@ let randomNum = getRandomInt(87);
               var movieURL = result.films[i];
 
               $.ajax({url: movieURL, success : function(newResult){
-                $("#movieList").append("<li> Appears in: " + newResult.title + "</li>");
-              }})
+                $("#movieList").append("<li>" + newResult.title + "</li>");
+              }});
           }
         }
         
+        $('html, body').animate({
+          scrollTop: $("#info").offset().top
+        }, 2000);
     },
     error: function(xhr, status, error){
       let errorMessage = xhr.status + ': ' + xhr.statusText
