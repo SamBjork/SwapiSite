@@ -27,13 +27,16 @@
                 </div>
             </div>
     </div>
-    <div class="card">
-        <div class="main-info" id="info">
-            <h2>Name: <span id="person"></span> </h2> 
-            <h2>Gender: <span id="gender"></span></h2> 
-            <h2>Homeplanet: <span id="homePlanet"></span> </h2>
-            <h2 id="movieApperances"> <span>
-                <ol id="movieList">Appears in: </ol>
+    <div id="spinner" style="display:none;">
+        <img id="img-spinner" height="100px" src="https://www.animatedimages.org/data/media/636/animated-star-wars-image-0094.gif" alt="Loading">
+    </div>
+    <div class="main-div">
+        <div class="main-info" id="all-info">
+            <span class="pretext">Name: <br><span class="info" id="person"></span> </span> 
+            <h2 class="pretext">Gender: <br><span class="info" id="gender"></span></h2> 
+            <h2 class="pretext">Homeplanet: <br><span class="info" id="homePlanet"></span> </h2>
+            <h2 class="pretext" id="movieApperances">Appears in: <span class="info">
+                <ol id="movieList"></ol>
            </span></h2>        
         </div>
     </div>

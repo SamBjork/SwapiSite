@@ -17,7 +17,6 @@
     padding: 0px;
     overflow-x: hidden; 
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -109,7 +108,7 @@
 #search-btn {
    position: absolute;
    top: 3%;
-   left: 55%;
+   left: 58%;
 }
 
 .banner-text-items input[type="button"] {
@@ -124,14 +123,51 @@
     border: 10px solid rgba(248, 218, 127, 0.911);
 }
 
+#search-btn:hover {
+    cursor: pointer;
+}
+
 /**********
     Main Info
 **********/
 
-.main-info {
-    text-align: center;
+#spinner {
+    position: absolute;
+   top: 60%;
+   left: 45%;
 }
 
+.pretext {
+    font-size: 2em;
+    font-family: StarWarsFont, serif;
+}
+
+.main-div {
+    background: url("../img/starnight.jpg");
+    text-align: center;
+  }
+
+.main-info {
+    text-align: center;
+    background: 2px rgb(255, 241, 47);
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, .1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all .2s linear;
+    width: 75%;
+    margin: 100px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.info {
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#movieList {
+    list-style-type: none;
+}
 
 /**********
     Footer
