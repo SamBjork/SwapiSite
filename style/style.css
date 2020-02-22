@@ -22,6 +22,10 @@
     padding: 0;
 }
 
+*:focus {
+    outline: none;
+}
+
 /**********
     Top-Bar
 ***********/
@@ -149,13 +153,14 @@
 
 .main-info {
     text-align: center;
-    background: 2px rgb(255, 241, 47);
-    box-shadow: 2px 4px 2px rgba(0, 0, 0, .1);
+    background: linear-gradient(180deg, #ffe81f 10%, #ffba26 50%, #ffe81f 80% );
+    box-shadow: 2px 4px 2px rgba(65, 64, 64, 0.1);
     border-radius: 12px;
+    border: 10px ridge   rgba(219, 168, 0, 0.877);
     overflow: hidden;
     transition: all .2s linear;
-    width: 75%;
-    margin: 100px;
+    width: 20%;
+    margin: 120px;
     padding: 20px;
     display: inline-block;
 }
@@ -196,6 +201,11 @@
 
 @media all and (max-width: 1200px) {
 
+    .main-info {
+        width: 30%;
+        font-size: 15px
+    }
+
 }
 
 @media all and (max-width: 800px) {
@@ -216,7 +226,12 @@
         width: 100%;
         flex: auto;
     }
+
+    .main-info {
+        width: 50%;
+    }
 }
+
 
 @media all and (max-width: 500px) {
     .top-bar {
@@ -261,5 +276,18 @@
         top: 75%;
         left: 30%;
      }
+
+     .main-info {
+        width: 70%;
+        position: relative;
+        left: -13%;
+    }
 }
 
+@media all and (max-width: 320px) {
+    .main-info {
+        width: 70%;
+        position: relative;
+        left: -30%;
+    }
+}
