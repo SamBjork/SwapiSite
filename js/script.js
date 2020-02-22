@@ -40,6 +40,13 @@ function callAPI() {
                   });
               }
           }
+          $.ajax({
+            url: "http://intergalacticdb.me/api/characters/" + result.name,
+            success: function (response) {
+              $("#test").html(response.species);
+            }
+          });
+
           $('html, body').animate({
               scrollTop: $("#all-info").offset().top
           }, 2000);
@@ -47,7 +54,7 @@ function callAPI() {
         },
         error: function (xhr, status, error) {
             let errorMessage = xhr.status + ': ' + xhr.statusText
-            alert('Error - ' + xhr.status);
+            alert(errorMessage);
         }
     });
 }
