@@ -14,7 +14,7 @@ function callAPI() {
     $.ajax({
         url: "https://swapi.co/api/people/" + randomNum,
         success: function (result) {
-          
+
           $("#person").empty();
           $("#person").html(result.name);
           const upper = result.gender.replace(/^\w/, c => c.toUpperCase());
@@ -40,12 +40,6 @@ function callAPI() {
                   });
               }
           }
-          $.ajax({
-            url: "http://intergalacticdb.me/api/characters/" + result.name,
-            success: function (response) {
-              $("#test").html(response.species);
-            }
-          });
 
           $('html, body').animate({
               scrollTop: $("#all-info").offset().top

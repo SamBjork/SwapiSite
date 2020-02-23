@@ -1,0 +1,68 @@
+h1 {
+    font-family: 'Days One';
+      font-size: 30px;
+    color: #FFE807;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 500;
+      line-height: 46.4px;
+  }
+  
+  h2 {
+    font-family: 'Days One';
+      font-size: 30px;
+    color: #FFFFFF;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 500;
+      line-height: 46.4px;
+  }
+  
+  h3 {
+      font-family: 'Droid Sans';
+      font-size: 14px;
+      font-style: italic;
+      font-variant: normal;
+      font-weight: 400;
+      line-height: 20px;
+  }
+  
+  h4 {
+      font-family: 'Days One'; 
+      font-size: 18px;
+    color: #fff;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 100;
+      line-height: 22px;
+  }
+  
+  p {
+    font-family: Jura;
+      font-size: 20px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 700;
+      line-height: 21px;
+  }
+.original  {
+    background: url("http://imageshack.com/a/img923/1620/BR6ySW.png"); 
+    background-position: center center;
+    background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } 
+  
+  .prequel  {
+    background: url("http://imageshack.com/a/img924/3503/wBPJbG.png"); 
+    background-position: center center;
+    background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
