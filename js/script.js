@@ -1,5 +1,12 @@
 document.getElementById("search-btn").addEventListener("click", callAPI);
 
+function overlayOn() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function overlayOff() {
+  document.getElementById("overlay").style.display = "none";
+}
 
 function getRandomInt(max) {
     return Math.floor((Math.random() * max) + 1);
@@ -69,6 +76,8 @@ function callAPI() {
 
     $('#spinner').show();
 
+    overlayOn();
+
     let randomNum = getRandomInt(87);
 
     $.ajax({
@@ -105,6 +114,8 @@ function callAPI() {
               scrollTop: $("#all-info").offset().top
           }, 2000);
           $('#spinner').hide();
+          overlayOff();
+
         },
         error: function (xhr, status, error) {
             let errorMessage = xhr.status + ': ' + xhr.statusText
