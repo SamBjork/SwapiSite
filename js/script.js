@@ -1,7 +1,8 @@
 $("#person-search").on("input", () =>{
-  if($("#person-search").val().length > 1) {
+  if($("#person-search").val().length > 1)
+  $('#spinner').show(); {
   let queryUrl = "https://swapi.co/api/people/?search=" + $("#person-search").val();
-    //Kontrollera om person-search = något option i people
+
     var foundCharacterInList = undefined;
     var opts = document.getElementById('people').childNodes;
     for(let i = 0 ;i < opts.length; i++) {
@@ -25,6 +26,7 @@ $("#person-search").on("input", () =>{
           for(let i = 0; i < response.results.length; i++) {
             let char = response.results[i];
             let opt =  $("#people").append("<option id="+i+">" + char.name + "</option>");
+            $('#spinner').hide();
             $("#"+i).data('datavalue', char);
           }
         },
