@@ -85,7 +85,7 @@ function outputCharacter(character) {
 
   $('html, body').animate({
       scrollTop: $("#all-info").offset().top
-  }, 1500);
+  }, 2000);
   $('#spinner').hide();
   overlayOff();
 }

@@ -236,12 +236,11 @@ input[type=text], select {
     margin: 120px;
     padding: 30px;
     display: inline-block;
-
 }
 
 h1 {
     text-transform: uppercase;
-    font-size: 2.2em;
+    font-size: 2.5em;
     font-family: StarWarsFont;
     padding: 10px;
     margin-bottom: 20px;
