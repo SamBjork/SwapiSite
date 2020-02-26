@@ -124,15 +124,27 @@
     margin-top: -30%;
     font-size: 2.5em;
     font-family: StarWarsFont, serif ;
+    text-shadow: 2px 2px #000000;
 }
 
-#search-btn {
+#instruction-text2 {
+    color: #ffe81f;
+    width: 50%; 
+    margin-top: 10%;
+    font-size: 2.5em;
+    font-family: StarWarsFont, serif ;
+    position: relative;
+    left: -50%;
+    text-shadow: 2px 2px #000000;
+}
+
+#random-btn {
    position: absolute;
    top: 3%;
    left: 58%;
 }
 
-#search-btn:hover {
+#random-btn:hover {
     cursor: pointer;
     background-color: #ffe81f;
     color: #49494980;
@@ -151,6 +163,18 @@
     border: 10px solid rgba(248, 218, 127, 0.911);
 }
 
+input[type=text], select {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 58%;
+    top: 50%;
+  }
 
 /**********
     Main Info
@@ -180,7 +204,7 @@
     overflow: hidden;
     transition: all .2s linear;
     width: 30%;
-    margin: 200px;
+    margin: 180px;
     padding: 20px;   
     display: inline-block;
 }
@@ -287,6 +311,7 @@ p {
     .top-bar {
         flex-direction: column;
         text-align: center;
+        position: static;
     }
 
     .logo {
@@ -326,6 +351,13 @@ p {
     }
 
     .main-info {
+        font-size: 0.7em;
+        width: 50%;
+        margin: 10%;
+        padding: 20px;   
+    }
+
+    .about-container {
         font-size: 0.7em;
         width: 50%;
         margin: 10%;
