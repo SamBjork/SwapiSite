@@ -1,20 +1,56 @@
+
 .movies-outer {
-    margin: 20px;
+    background: url("../img/starnight.jpg");
+    background-size: cover;
 }
 
-.orginals-container {
+.originals-intro {
+    color: #fff;
+}
 
-display: flex;
-flex-wrap: wrap;
+p {
+    color: #fff;
+}
 
+.originals-container {
+
+    background: url("http://imageshack.com/a/img923/1620/BR6ySW.png");
+    display: flex;
+    color: blanchedalmond;
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.originals {
+    
 }
 
 .movie-img {
-    margin: 1rem;
-    background: white;
-    box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+    margin: 1em;
+    box-shadow: 2px 4px 25px rgba(255, 238, 0, 0.952);
     border-radius: 12px;
-    overflow: hidden;
     transition: all .2s linear;
-    max-width: 20%;
+    max-width: 50%;
 }
+
+.movie-desc {
+    color: #fff;
+}
+
+.prequels-intro {
+
+    color: #fff;
+
+}
+
+.prequels-container {
+
+    display: flex;
+    background: url("http://imageshack.com/a/img924/3503/wBPJbG.png");
+    margin: 20px;
+    padding: 30px;
+    color: blanchedalmond;
+    text-align: center;
+}
+
