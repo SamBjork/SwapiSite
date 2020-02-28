@@ -176,9 +176,9 @@ input[type=text], select {
     top: 50%;
   }
 
-/**********
+/*************
     Main Info
-**********/
+*************/
 
 #spinner {
     position: absolute;
@@ -284,7 +284,6 @@ p {
     #instruction-text2 {
         top: 150px;
     }
-
 }
 
 
@@ -353,14 +352,8 @@ p {
     }
 
     .banner-text-items input[type="button"] {
-        background-color: #49494980;
-        color: #ffe81f;
         font-size: 17px;
-        font-family: StarWarsFont2, serif;
-        padding: 10px;
         margin-top: 0px;
-        text-transform: uppercase;
-        border-radius: 30px;
         border: 7px solid rgba(248, 218, 127, 0.911);
     }
 
