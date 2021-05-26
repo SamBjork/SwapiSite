@@ -2,7 +2,7 @@ $("#person-search").on("input", () =>{
   if($("#person-search").val().length > 1)
   { 
     $('#spinner').show(); 
-    let queryUrl = "https://swapi.co/api/people/?search=" + $("#person-search").val();
+    let queryUrl = "https://swapi.dev/api/people/?search=" + $("#person-search").val();
 
     var foundStarWarsCharacterInList = undefined;
     var opts = document.getElementById('people').childNodes;
@@ -101,7 +101,7 @@ function getRandomCharacter() {
     let randomNum = getRandomInt(86);
 
     $.ajax({
-        url: "https://swapi.co/api/people/" + randomNum,
+        url: "https://swapi.dev/api/people/" + randomNum,
         success: function (result) {
           outputCharacter(result);
           
