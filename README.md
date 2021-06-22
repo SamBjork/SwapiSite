@@ -1,7 +1,7 @@
 # starwarssite
 A StarWars website project constructed simply with HTML, CSS and JavaScript.
 
-It is live and hosted as a github page [link](https://sambjork.github.io/)
+It is live and hosted as a github page [link to site](https://sambjork.github.io/).
 
 - With this website you can press a button to randomly present a character from Star Wars, along with their personal info.
 - You can search for a character and also get suggestions through icremental search. 
